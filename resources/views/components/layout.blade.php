@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    @vite(['resources/css/app.css', 'resources/js/app.s'])
     <title>The Aulab Post</title>
 </head>
 <body>
-    <x-layout>
-        <div class="container-fluid p-5 bg-info text-center text-white">
-            <div class="row jsutify-content-center">
-                <h1 class="display-1">The Aulab Post</h1>
-            </div>
-        </div>
-    </x-layout>
+    <x-navbar />
+    <div class="min-vh-100">
+        {{$slot}}
+    </div>
 </body>
 </html>
