@@ -1,2 +1,6 @@
 @import 'bootstrap';
 @import './style';
+
+li {
+    list-style-type: none;
+}
