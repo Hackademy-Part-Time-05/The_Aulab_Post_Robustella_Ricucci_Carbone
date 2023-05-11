@@ -33,13 +33,13 @@
                     </div>
                     <div class="mb-3">
                         <label for="image" class="form-label">Immagine:</label>
-                        <input type="image" type="file" class="form-control" id="image">
+                        <input name="image" type="file" class="form-control" id="image">
                     </div>
                     <div class="mb-3">
                         <label for="category" class="form-label">Categoria:</label>
                         <select name="category" id="category">
                             @foreach ($categories as $category)
-                                <option value="{{ category->id }}">{{ $category->name }}</option>    
+                                <option value="{{ $category->id }}">{{ $category->name }}</option>    
                             @endforeach
                         </select>
                     </div>
