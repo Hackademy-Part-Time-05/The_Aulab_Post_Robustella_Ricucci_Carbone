@@ -4,4 +4,5 @@
             {{ session('message') }}
         </div>        
     @endif
+ciao
 </x-layout>
