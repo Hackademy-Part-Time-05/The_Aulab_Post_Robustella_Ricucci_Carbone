@@ -28,7 +28,7 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        $reuqest->validate([
+        $request->validate([
             'title' => 'required|unique:articles|min:5',
             'subtitle' => 'required|unique:articles|min:5',
             'body' => 'required|min:10',
