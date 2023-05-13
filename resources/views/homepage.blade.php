@@ -16,7 +16,7 @@
                         <p class="card-text">{{$article->subtitle}}</p>
                         <p class="small test-muted fst-italic text-capitalize">{{$article->category->name}}</p>
                         <div class="card-footer text-muted d-flex justify-content-between align-items-center">Redatto il{{$article->created_at->format('d/m/y')}} da {{$article->user->name}}
-                            <a href="#" class="btn btn-info text-white">Leggi</a>
+                            <a href="{{route('article.show', compact('article'))}}" class="btn btn-info text-white">Leggi</a>
                         </div>
                 </div>
              </div>
