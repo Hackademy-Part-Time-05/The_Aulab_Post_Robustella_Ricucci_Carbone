@@ -90,7 +90,7 @@ class ArticleController extends Controller
 
     public function byCategory(Category $category){
         $articles = $category->articles->sortByDesc('created_at');
-        return view('article.by-category', compact('category', 'articles'));
+        return view('article.category', compact('category', 'articles'));
     }
 }
 
