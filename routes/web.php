@@ -22,3 +22,5 @@ Route::post('/article/store', [ArticleController::class, 'store'])->name('articl
 Route::get('/article/index', [ArticleController::class, 'index'])->name('article.index');
 Route::get('/article/show/{article}', [ArticleController::class, 'show'])->name('article.show');
 Route::get('/article/category/{category}', [ArticleController::class, 'byCategory'])->name('article.byCategory');
+Route::get('/careers', [PublicController::class, 'careers'])->name('careers');
+Route::post('/careers/submit', [PublicController::class, 'careerSubmit'])->name('careers.submit');

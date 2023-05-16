@@ -11,7 +11,11 @@ class ArticleController extends Controller
 {
     public function __construct() 
     {
-        $this->middleware('auth')->except('index','show');
+        $this->middleware('auth')->except('homepage');
+    }
+
+    public function careers(){
+        return view('careers');
     }
     /**
      * Display a listing of the resource.

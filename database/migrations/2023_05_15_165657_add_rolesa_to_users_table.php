@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use App\Models\User;
 
 return new class extends Migration
 {
@@ -30,9 +31,10 @@ return new class extends Migration
      */
     public function down()
     {
-      User::where('email', 'admin@theaulabpost.it')->delete();
+        User::where('email', 'admin@theaulabpost.it')->delete();
 
-      Schema::table('users', function (Blueprint $table)) {
-        $table->dropColumn(['is_admin', 'is_revisor', 'is_writer']);
+        Schema::table('users', function (Blueprint $table){
+            $table->dropColumn(['is_admin', 'is_revisor', 'is_writer']);
+        });
     }
 };
