@@ -29,6 +29,10 @@
             </form>
         </ul>
       </li>
+      @if(Auth::user()->is_admin)
+        <li><a class="dropdown-item" href="{{ route('admin.dashboard') }}">Dashboard Admin</a></li>
+      @endif
+
       @endauth
       @guest
         <li class="nav-item dropdown">
