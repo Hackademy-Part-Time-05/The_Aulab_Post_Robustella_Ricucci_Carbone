@@ -28,7 +28,7 @@
                 </div>
                 @endif
 
-                <form class="p-5" action="" method="">
+                <form class="p-5" action="{{route('careers.submit')}}" method="post">
                     @csrf
 
                    <div class="mb-3"> 

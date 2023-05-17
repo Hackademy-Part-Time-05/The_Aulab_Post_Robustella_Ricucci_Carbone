@@ -3,11 +3,12 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Address;
 use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Mail\Mailables\Envelope;
+use Illuminate\Contracts\Queue\ShouldQueue;
 
 class CareerRequestMail extends Mailable
 {
@@ -26,6 +27,7 @@ class CareerRequestMail extends Mailable
     {
         return new Envelope(
             subject: 'Richiesta di lavoro ricevuta',
+            from: new Address('admin@theaulabpost.it')
         );
     }
 
@@ -48,4 +50,6 @@ class CareerRequestMail extends Mailable
     {
         return [];
     }
+
+    
 }

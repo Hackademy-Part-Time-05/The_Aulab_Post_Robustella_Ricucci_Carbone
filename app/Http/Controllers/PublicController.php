@@ -36,7 +36,7 @@ class PublicController extends Controller
     $email = $request->email;
     $message = $request->message;
 
-    Mail::to('adrmin@theaulabpost.it')->send(new CareerRequestMail(compact('role', 'email', 'message')));
+    Mail::to('admin@theaulabpost.it')->send(new CareerRequestMail(compact('role', 'email', 'message')));
     
 
     switch ($role) {
@@ -55,7 +55,7 @@ class PublicController extends Controller
 
     $user->update();
 
-    return redirect(route('homepage'))->width('message', 'Grazie per averci contattato!');
+    return redirect(route('homepage'))->with('message', 'Grazie per averci contattato!');
 
 }
 }
