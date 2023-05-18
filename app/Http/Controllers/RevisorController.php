@@ -21,7 +21,7 @@ class RevisorController extends Controller
             'is_accepted' => true,
         ]);
     
-        return redirect(route('revisor.dashboard'))->with('message', 'Hai accettato l\'artciolo scelto');
+        return redirect(route('revisor.dashboard'))->with('message', 'Hai accettato l\'articolo scelto');
     
     }
     
