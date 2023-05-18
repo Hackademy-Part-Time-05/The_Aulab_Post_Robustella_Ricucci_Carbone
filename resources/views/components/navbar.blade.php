@@ -33,6 +33,10 @@
         <li><a class="dropdown-item" href="{{ route('admin.dashboard') }}">Dashboard Admin</a></li>
       @endif
 
+      @if(Auth::user()->is_revisor)
+      <li><a class="dropdown-item" href="{{ route('revisor.dashboard') }}">Dashboard Revisor</a></li>
+    @endif
+
       @endauth
       @guest
         <li class="nav-item dropdown">

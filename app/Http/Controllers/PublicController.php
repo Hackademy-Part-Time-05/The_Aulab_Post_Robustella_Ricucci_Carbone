@@ -19,9 +19,9 @@ class PublicController extends Controller
         return view('careers');
     }
     
-    public function Homepage() {
-        $articles = Article::orderBy('created_at', 'desc')->take(4)->get();
-        return view ('homepage', compact('articles'));
+    public function homepage() {
+        $articles = Article::where('is_accepted', true)->orderBy('created_at', 'desc')->take(4)->get();
+        return view('homepage', compact('articles'));
     }
 
     public function careersSubmit(Request $request){
@@ -58,5 +58,6 @@ class PublicController extends Controller
     return redirect(route('homepage'))->with('message', 'Grazie per averci contattato!');
 
 }
+
 }
 

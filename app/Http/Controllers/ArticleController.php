@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Article;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\Models\Category;
 
 class ArticleController extends Controller
 {
@@ -17,7 +18,10 @@ class ArticleController extends Controller
     {
         $articles = Article::orderBy('created_at', 'desc')->get();
         return view('article.index', compact('articles'));
+        $articles = Article::where('is_accepted', true)->orderBy('created_at', 'desc')->get();
+        return view('article.index', compact('articles'));
     }
+    
 
     /**
      * Show the form for creating a new resource.
@@ -85,8 +89,18 @@ class ArticleController extends Controller
     }
 
     public function byCategory(Category $category){
-        $articles = $category->articles->sortByDesc('created_at');
-        return view('article.category', compact('category', 'articles'));
+        $articles = $category->articles->sortByDesc('created_at')->filter(function($article){
+            return $article->is_accepted == true;
+        });
+        return view ('article.by-category', compact('category', 'articles'));
+    }
+        
+    public function byWriter(User $user){
+        $articles = $user->articles->sortByDesc('created_at')->filter(function($article){
+        return $article->is_accepted == true;
+        });
+
+    return view('article.by-user', compact('user', 'articles'));
     }
 }
 
