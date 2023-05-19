@@ -1,17 +1,18 @@
-<nav class="navbar navbar-expand-lg bg-light">
+<nav class="navbar navbar-expand-lg bg-dark text-white px-4">
       <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand bg-dark text-white" href="/">The Aulab Post</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
               </li>
             </ul>
-          </div>
+          </div> -->
       </div>
+      <div class="container-fluid d-flex p-2 justify-content-end">
       @auth
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Benvenuto {{Auth::user()->name}}</a>
@@ -34,23 +35,23 @@
       @endif
 
       @if(Auth::user()->is_revisor)
-      <li><a class="dropdown-item" href="{{ route('revisor.dashboard') }}">Dashboard Revisor</a></li>
-    @endif
+        <li><a class="dropdown-item mx-2" href="{{ route('revisor.dashboard') }}">Dashboard Revisor</a></li>
+      @endif
 
       @endauth
-      @guest
+      <li>
+      <a type="button" class="btn btn-outline-light mx-2" href="{{ route('register') }}">Registrati</a>
+      </li>
+      <li>
+        <a class="mx-2 btn btn-warning" href="{{ route('login') }}">Accedi</a>
+      </li>
+      <li class="nav-item">
+        <a type="button" class="btn btn-light mx-2" href="{{route('article.create')}}"><i class="fa-solid fa-pen pen-navbar mx-1 pe-2"></i>Scrivi un articolo</a>
+      </li>
+      <!-- @guest
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Benvenuto Ospite</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"></ul>
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Benvenuto!</a>
         </li>
-      @endguest
-        <li>
-          <a class="dropdown-item" href="{{ route('register') }}">Registrati</a>
-        </li>
-        <li>
-          <a class="dropdown-item" href="{{ route('login') }}">Accedi</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{route('article.create')}}">Inserisci un articolo</a>
-        </li>
+      @endguest -->
+    </div>
 </nav>
