@@ -17,3 +17,7 @@ font-family: 'Montserrat', sans-serif;
 .pen-navbar {
     color: #212529;
 }
+
+.header, thead {
+    background-color: #212529;
+}

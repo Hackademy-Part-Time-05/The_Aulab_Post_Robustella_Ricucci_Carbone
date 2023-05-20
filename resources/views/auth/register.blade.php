@@ -1,5 +1,5 @@
 <x-layout>
-        <div class="container-fluid p-5 bg-info text-center text-white">
+        <div class="container-fluid p-5 header text-center text-white">
             <div class="row justify-content-center">
                  <h1 class="display-1">
                          Registrati
@@ -40,7 +40,7 @@
        <input name="password_confirmation" type="password" class="form-control" id="password_confirmation">
       </div>
       <div class="mt-2">
-       <button class="btn btn-info text-white">Registrati</button>
+       <button class="btn btn-warning">Registrati</button>
        <p class="small mt-2">Già registrato? <a href="{{route('login')}}">Clicca qui</a></p>
       </div>
          </form>

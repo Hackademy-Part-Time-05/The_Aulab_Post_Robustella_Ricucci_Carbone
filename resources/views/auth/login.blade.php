@@ -1,5 +1,5 @@
 <x-layout>
-   <div class="container-fluid p-5 bg-info text-center text-white">
+   <div class="container-fluid p-5 header text-center text-white">
     <div class="row justify-content-center">
       <h1 class="display-1">
         Accedi
@@ -33,7 +33,7 @@
             <input type="password" name="password" class="form-control" id="password">
         </div>
         <div class="mt-2">
-          <button class="btn btn-info text-white">Accedi</button>
+          <button class="btn btn-warning">Accedi</button>
           <p class="small mt-2">Non sei registrato? <a href="{{route('register')}}">Clicca qui</a></p>
         </div>
         </form> 

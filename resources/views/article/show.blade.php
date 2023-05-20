@@ -1,6 +1,6 @@
 <x-layout>
 
-    <div class="container-fluid p-5 bg-info text-center text-white">
+    <div class="container-fluid p-5 header text-center text-white">
         <div class="row justify-content-center">
             <h1 class="display-1">
                 {{$article->title}}
@@ -20,15 +20,16 @@
                 </div>
                 <hr>
                 <p>{{$article->body}}</p>
-                <div class="text-center">
-                    <a href="{{route('article.index')}}" class="btn btn-info text-white my-5">Torna indietro</a>
+                <div class="text-center mt-3">
+                    <a href="{{route('article.index')}}" class="btn btn-outline-dark">Torna indietro</a>
                 </div>
             </div>
         </div>
     </div>
-
-    @if(Auth::user() && Auth::user()->is_revisor)
-    <a href="{{route('revisor.acceptArticle', compact('article'))}}" class="btn btn-success text-white my-5">Accetta articolo</a>
-    <a href="{{route('revisor.rejectArticle', compact('article'))}}" class="btn btn-danger text-white my-5">Rifiuta articolo</a>
-    @endif
+    <div class="container-fluid d-flex justify-content-center ">
+        @if(Auth::user() && Auth::user()->is_revisor)
+        <a href="{{route('revisor.acceptArticle', compact('article'))}}" class="btn btn-success text-white mx-3 mb-5">Accetta articolo</a>
+        <a href="{{route('revisor.rejectArticle', compact('article'))}}" class="btn btn-danger text-white mx-3 mb-5">Rifiuta articolo</a>
+        @endif
+    </div>
 </x-layout>

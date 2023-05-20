@@ -23,20 +23,24 @@
         <li>
             <hr class="dropdown-divider">
         </li>
+        @if(Auth::user()->is_admin)
+          <li>
+            <a class="dropdown-item" href="{{ route('admin.dashboard') }}">Dashboard Admin</a>
+          </li>
+        @endif
+  
+        @if(Auth::user()->is_revisor)
+          <li>
+            <a class="dropdown-item" href="{{ route('revisor.dashboard') }}">Dashboard Revisore</a>
+          </li>
+        @endif
         <li>
-            <a class="dropdown-item" href="#" onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Logout</a></li>
+            <a class="dropdown-item" href="#" onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Esci</a></li>
             <form method="post" action="{{route('logout')}}" id="form-logout" class="d-none">
             @csrf
             </form>
         </ul>
       </li>
-      @if(Auth::user()->is_admin)
-        <li><a class="dropdown-item" href="{{ route('admin.dashboard') }}">Dashboard Admin</a></li>
-      @endif
-
-      @if(Auth::user()->is_revisor)
-        <li><a class="dropdown-item mx-2" href="{{ route('revisor.dashboard') }}">Dashboard Revisor</a></li>
-      @endif
 
       @endauth
       <li>

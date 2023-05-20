@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container-fluid p-5 bg-info text-center text-white">
+    <div class="container-fluid p-5 header text-center text-white">
         <div class="row justify-content-center">
             <h1 class="display-1">
                 Inserisci un articolo
@@ -49,8 +49,8 @@
                     </div>
 
                     <div class="mt-2">
-                        <button class="btn btn-info text-white">Inserisci un articolo</button>
-                        <a href="{{ route('homepage') }}" class="btn btn-outline-info">Torna alla home</a>
+                        <button class="btn btn-warning">Inserisci un articolo</button>
+                        <a href="{{ route('homepage') }}" class="btn btn-outline-dark">Torna alla home</a>
                     </div>
                 </form>
             </div>
