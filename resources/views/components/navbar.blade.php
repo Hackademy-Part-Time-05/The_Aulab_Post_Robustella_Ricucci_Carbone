@@ -41,17 +41,18 @@
             </form>
         </ul>
       </li>
-
+      <li class="nav-item">
+        <a type="button" class="btn btn-light mx-2" href="{{route('article.create')}}"><i class="fa-solid fa-pen pen-navbar mx-1 pe-2"></i>Scrivi un articolo</a>
+      </li>
       @endauth
+      @guest
       <li>
       <a type="button" class="btn btn-outline-light mx-2" href="{{ route('register') }}">Registrati</a>
       </li>
       <li>
         <a class="mx-2 btn btn-warning" href="{{ route('login') }}">Accedi</a>
       </li>
-      <li class="nav-item">
-        <a type="button" class="btn btn-light mx-2" href="{{route('article.create')}}"><i class="fa-solid fa-pen pen-navbar mx-1 pe-2"></i>Scrivi un articolo</a>
-      </li>
+      @endguest
       <!-- @guest
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Benvenuto!</a>

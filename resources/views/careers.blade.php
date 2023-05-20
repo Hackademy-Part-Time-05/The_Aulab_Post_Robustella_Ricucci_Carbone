@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container-fluid p-5 bg-info text-center text-white">
+    <div class="container-fluid p-5 header text-center text-white">
         <div class="row justify-content-center">
             <h1 class="display-1">
                 Lavora con noi
@@ -45,11 +45,13 @@
                     <input name="email" type="email" class="form-control" id="email" value="{{old('email') ?? Auth::user()->email}}">
                 </div>
                 <div class="mb-3">
-                    <label for="message" class="form-label">Parlaci di te</label>
-                    <textarea name="message" id="message" cols="30" rows="7" classe="form-control">{{old('message')}}</textarea>
+                    <div>
+                        <label for="message" class="form-label">Parlaci di te</label>
+                    </div>
+                    <textarea name="message" id="message" cols="30" rows="7" class="form-control careers-form">{{old('message')}}</textarea>
                 </div>
-                <div class="mt-2">
-                    <button class="btn btn-info text-white">Invia la candidatura</button>
+                <div class="mt-2 d-flex justify-content-end">
+                    <button class="btn btn-warning">Invia la candidatura</button>
                 </div>
             </form>
 
