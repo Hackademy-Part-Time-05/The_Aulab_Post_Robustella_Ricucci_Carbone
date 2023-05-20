@@ -16,7 +16,7 @@
                     <p class="card-text px-3">{{$article->subtitle}}</p>
                     <div class="card-footer py-3">
                         <a href="{{route('article.show', compact('article'))}}" class="btn btn-warning container">Leggi</a>
-                        <div class="text-body-secondary text-muted py-2 d-flex justify-content-center">Redatto il {{$article->created_at->format('d/m/y')}} da <a href="{{route('article.byUser', ['user' => $article->user->id])}}">{{$article->user->name}}</a></div>
+                        <div class="text-body-secondary text-muted pt-4 text-center">Redatto il {{$article->created_at->format('d/m/y')}} da <a class="writer-link" href="{{route('article.byUser', ['user' => $article->user->id])}}">{{$article->user->name}}</a></div>
                         <a href="{{route('article.byCategory', ['category' => $article->category->id])}}" class="small text-muted d-flex justify-content-center fst-italic text-capitalize py-1">{{$article->category->name}}</a>
                     </div>
                     </div>
