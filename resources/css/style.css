@@ -25,3 +25,8 @@ font-family: 'Montserrat', sans-serif;
 .writer-link {
     color: #212529;
 }
+
+.writer-link:hover {
+    color: #212529;
+    font-weight: 500;
+}
