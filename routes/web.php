@@ -44,3 +44,6 @@ Route::middleware('writer')->group(function(){
     Route::post('/article/store', [ArticleController::class, 'store'])->name('article.store');
 });
 Route::get('/article/search', [ArticleController::class, 'articleSearch'])->name('article.search');
+Route::middleware('admin')->group(function(){
+    Route::put('/admin/edit/{tag}/tag', [AdminController::class, 'editTag'])->name('admin.editTag');
+});
