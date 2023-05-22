@@ -13,7 +13,7 @@
         @foreach($articles as $article)
             <div class="col-3 col-md-4 col-sm-4">
                 <div class="card">
-                    <a href="{{route('article.show', compact('article'))}}"><img src="{{Storage::url($article->image)}}" class="card-img-top" alt="..."></a>
+                    <a href="{{route('article.show', compact('article'))}}"><img src="{{ Storage::url($article->image) }}" class="card-img-top" alt="..."></a>
                     <div class="card-body p-0">
                     <h5 class="card-title p-3">{{$article->title}}</h5>
                     <p class="card-text px-3">{{$article->subtitle}}</p>
