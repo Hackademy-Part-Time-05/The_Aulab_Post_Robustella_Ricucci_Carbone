@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Tag;
 use App\Models\User;
+use App\Models\Category;
+use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
@@ -77,6 +79,6 @@ class AdminController extends Controller
 
         $category->delete();
 
-        return redirect(route('admin.dashboard'))->with('message', 'Hai eliminato la categoria correttamente!')
+        return redirect(route('admin.dashboard'))->with('message', 'Hai eliminato la categoria correttamente!');
     }
 }
