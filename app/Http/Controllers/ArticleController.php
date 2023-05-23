@@ -46,7 +46,7 @@ class ArticleController extends Controller
             'tags' => 'required',
         ]);
         
-        Article::create([
+        $article = Article::create([
             'title' => $request->title,
             'subtitle' => $request->subtitle,
             'body' => $request->body,

@@ -8,7 +8,7 @@
             </div>
         </div>
 
-        <!-- <div class="container container-fluid my-5">
+        <div class="container container-fluid my-5">
             <div class="row justify-content-around">
                 @foreach($articles as $article)
                     <div class="col-3 col-md-4 col-sm-4">
@@ -27,7 +27,6 @@
                     </div>
                 @endforeach
             </div>
-        </div> -->
-        <x-cards />
+        </div>
 
 </x-layout>

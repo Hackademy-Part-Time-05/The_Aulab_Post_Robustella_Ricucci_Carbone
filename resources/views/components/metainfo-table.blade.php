@@ -20,7 +20,7 @@
                 @csrf
                 @method('put')
                 <input type="text" name="name" placeholder="Nuovo nome tag" class="form-control w-50 d-inline">
-                <button type="submit" class="btn btn-info text-white">Aggiorna</button>
+                <button type="submit" class="btn btn-success text-white">Aggiorna</button>
             </form>
         </td>
         <td>
@@ -32,11 +32,11 @@
         </td>
         @else
         <td>
-            <form action="{{route('admin.editCategory', [category => $metaInfo])}}" method="POST">
+            <form action="{{route('admin.editCategory', ['category' => $metaInfo])}}" method="POST">
             @csrf
             @method('put')
-            <input type="text" name="name" placeholder="Nuovo nome" cLlass="form-control w-50 d-inline">
-            <button type="submit" class="btn btn-info text-white">Aggiorna</button>
+            <input type="text" name="name" placeholder="Nuovo nome" class="form-control w-50 d-inline">
+            <button type="submit" class="btn btn-success text-white">Aggiorna</button>
             </form>
         </td>
         <td>
