@@ -38,3 +38,27 @@ font-family: 'Montserrat', sans-serif;
 .footer h5 {
     color: white;
 }
+
+
+
+.card-img-top {
+    height: 350px;
+}
+
+.card-body {
+    height: 120px;
+}
+
+.card-footer {
+    height: 180px;
+}
+
+.ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+img {
+    object-fit: cover;
+}
