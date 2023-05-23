@@ -22,6 +22,13 @@
                                 @foreach($article->tags as $tag)
                                     #{{$tag->name}}
                                 @endforeach
+                                @if($article->category)
+                                    <a href="{{route('article.byCategory', ['category' => $article->category->id])}}" class="small text-muted fst-italic text-capitalize">{{$article->category->name}}</a>
+                                @else 
+                                    <p class="small text-muted fst-italica text-capitalize">
+                                        Non categorizzato
+                                    </p> 
+                                @endif   
                             </p>
                         </div>
                         </div>

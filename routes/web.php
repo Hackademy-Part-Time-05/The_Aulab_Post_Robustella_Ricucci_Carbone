@@ -46,4 +46,7 @@ Route::middleware('writer')->group(function(){
 Route::get('/article/search', [ArticleController::class, 'articleSearch'])->name('article.search');
 Route::middleware('admin')->group(function(){
     Route::put('/admin/edit/{tag}/tag', [AdminController::class, 'editTag'])->name('admin.editTag');
+    Route::delete('/admin/delete/{tag}/tag', [AdminController::class, 'deleteTag'])->name('admin.deleteTag');
+    Route::put('/admin/edit/{category}/category', [AdminController::class, 'editCategory'])->name('admin.editCategory');
+    Route::delete('/admin/delete/{category}/category', [AdminController::class, 'deleteCategory'])->name('admin.deleteCategory');
 });

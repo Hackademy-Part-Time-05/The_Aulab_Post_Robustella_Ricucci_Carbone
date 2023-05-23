@@ -48,6 +48,35 @@ class AdminController extends Controller
             'name' => strtolower($request->name),
         ]);
 
-        return redirect(route('admin.dashboard'))->with('message', 'Hai correttamente aggiornato il tag');
+        return redirect(route('admin.dashboard'))->with('message', 'Hai aggiornato il tag correttamente');
+    }
+
+    public function deleteTag(Tag $tag){
+        foreach($tag->articles as $article){
+            $article->tags()->detach($tag);
+        }
+
+        $tag->delete();
+
+        return redirect(route('admin.dashboard'))->with('message', 'Hai eliminato il tag correttamente!');
+    }
+
+    public function editCategory(Request $request, Category $category){
+        $request->validate([
+            'name' => 'required|unique:categories',
+        ]);
+
+        $category->update([
+            'name' => strtolower($request->name),
+        ]);
+
+        return redirect(route('admin.dashboard'))->with('message', 'Hai aggiornato la categoria correttamente!');
+    }
+
+    public function deleteCategory(Category $category){
+
+        $category->delete();
+
+        return redirect(route('admin.dashboard'))->with('message', 'Hai eliminato la categoria correttamente!')
     }
 }
