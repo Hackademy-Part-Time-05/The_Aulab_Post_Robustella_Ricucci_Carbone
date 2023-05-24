@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\WriterController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\RevisorController;
 
@@ -42,6 +43,10 @@ Route::middleware('revisor')->group(function(){
 Route::middleware('writer')->group(function(){
     Route::get('/article/create', [ArticleController::class, 'create'])->name('article.create');
     Route::post('/article/store', [ArticleController::class, 'store'])->name('article.store');
+    Route::get('/writer/dashboard', [WriterController::class, 'dashboard'])->name('writer.dashboard');
+    Route::get('/article/{article}/edit', [ArticleController::class, 'edit'])->name('article.edit');
+    Route::put('/article/{article}/update', [ArticleController::class, 'update'])->name('article.update');
+    Route::delete('/article/{article}/destroy', [ArticleController::class, 'destroy'])->name('article.destroy');
 });
 Route::get('/article/search', [ArticleController::class, 'articleSearch'])->name('article.search');
 Route::middleware('admin')->group(function(){
@@ -51,4 +56,5 @@ Route::middleware('admin')->group(function(){
     Route::delete('/admin/delete/{category}/category', [AdminController::class, 'deleteCategory'])->name('admin.deleteCategory');
     Route::post('/admin/category/store', [AdminController::class, 'storeCategory'])->name('admin.storeCategory');
 });
+
 
