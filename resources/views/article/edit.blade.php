@@ -21,9 +21,9 @@
                     </div>
                     @endif
 
-                    <form class="card p-5 shadow" action="" method="" enctype="multipart/form-data">
+                    <form class="card p-5 shadow" action="{{route('article.update', compact('article'))}}" method="POST" enctype="multipart/form-data">
                         @csrf
-
+                        @method("PUT")
                         <div class="mb-3">
                             <label for="title" class="form-label">Titolo:</label>
                             <input name="title" type="text" class="form-control" id="title" value="{{$article->title}}">                       
@@ -55,7 +55,7 @@
                         </div>
 
                         <div class="mt-2">
-                            <button class="btn btn-info text-white">Inserisci un articolo</button>
+                            <button class="btn btn-info text-white">Modifica l'articolo</button>
                             <a class="btn btn-outline-info " href="{{route('homepage')}}">Torna alla home</a></p>
                         </div>
                     </form>
