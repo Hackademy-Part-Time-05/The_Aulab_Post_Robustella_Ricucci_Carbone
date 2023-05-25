@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container-fluid p-5 bg-info text-center text-white">
+    <div class="container-fluid p-5 header text-center text-white">
         <div class="row justify-content-center">
             <h1 class="display-1">
                 Modifica un articolo
@@ -55,8 +55,8 @@
                         </div>
 
                         <div class="mt-2">
-                            <button class="btn btn-info text-white">Modifica l'articolo</button>
-                            <a class="btn btn-outline-info " href="{{route('homepage')}}">Torna alla home</a></p>
+                            <button class="btn btn-success">Salva le modifiche</button>
+                            <a class="btn btn-outline-secondary" href="{{route('homepage')}}"><i class="fa-solid fa-house"></i> Torna alla home</a></p>
                         </div>
                     </form>
 

@@ -18,30 +18,30 @@
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Benvenuto {{Auth::user()->name}}</a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
         <li>
-            <a class="dropdown-item" href="">Profilo</a>
+            <a class="dropdown-item dropdown-custom-profile" href="/user/profile">Profilo</a>
         </li>
         <li>
             <hr class="dropdown-divider">
         </li>
         @if(Auth::user()->is_admin)
           <li>
-            <a class="dropdown-item" href="{{ route('admin.dashboard') }}">Dashboard Admin</a>
+            <a class="dropdown-item dropdown-custom-standard-labels" href="{{ route('admin.dashboard') }}">Dashboard Admin</a>
           </li>
         @endif
   
         @if(Auth::user()->is_writer)
           <li>
-            <a class="dropdown-item" href="{{ route('writer.dashboard') }}">Dashboard Redattore</a>
+            <a class="dropdown-item dropdown-custom-standard-labels" href="{{ route('writer.dashboard') }}">Dashboard Redattore</a>
           </li>
         @endif
 
         @if(Auth::user()->is_revisor)
           <li>
-            <a class="dropdown-item" href="{{ route('revisor.dashboard') }}">Dashboard Revisore</a>
+            <a class="dropdown-item dropdown-custom-standard-labels" href="{{ route('revisor.dashboard') }}">Dashboard Revisore</a>
           </li>
         @endif
         <li>
-            <a class="dropdown-item" href="#" onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Esci</a></li>
+            <a class="dropdown-item dropdown-custom-exit" href="#" onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Esci</a></li>
             <form method="post" action="{{route('logout')}}" id="form-logout" class="d-none">
             @csrf
             </form>

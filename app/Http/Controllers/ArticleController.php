@@ -127,7 +127,7 @@ class ArticleController extends Controller
 
         $article->tags()->sync($newTags);
 
-        return redirect(route('writer.dashboard'))->with('message', 'Hai aggiornato l\'articolo scelto correttamente');
+        return redirect(route('writer.dashboard'))->with('message', 'Hai aggiornato l\'articolo correttamente');
     }
 
     /**
@@ -141,7 +141,7 @@ class ArticleController extends Controller
 
         $article->delete();
 
-        return redirect(route('writer.dashboard'))->with('message', 'Hai cancellato l\'articolo scelto correttamente!');
+        return redirect(route('writer.dashboard'))->with('message', 'Hai cancellato l\'articolo correttamente!');
     }
 
     public function byCategory(Category $category){

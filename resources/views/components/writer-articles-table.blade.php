@@ -24,13 +24,15 @@
             </td>
             <td>{{$article->created_at->format('d/m/Y')}}</td>
             <td>
-                <a href="{{route('article.show', compact('article'))}}" class="btn btn-info text-white">Leggi l'articolo</a>
-                <a href="{{route('article.edit', compact('article'))}}" class="btn btn-warning text-white">Modifica l'articolo</a>
-                <form action="{{route('article.destroy', compact('article'))}}" method="post" class="d-inline">
-                    @csrf
-                    @method('delete')
-                    <button type="submit" class="btn btn-danger">Elimina articolo</button>
-                </form>
+                <div class="d-flex">                    
+                    <a href="{{route('article.show', compact('article'))}}" class="btn btn-outline-secondary border border-0 mx-2"><i class="fa-solid fa-eye"></i></a>
+                    <a href="{{route('article.edit', compact('article'))}}" class="btn btn-outline-primary border border-0 mx-2"><i class="fa-solid fa-pen"></i></a>
+                    <form action="{{route('article.destroy', compact('article'))}}" method="post" class="d-inline mx-2">
+                        @csrf
+                        @method('delete')
+                        <button type="submit" class="btn btn-outline-danger border border-0"><i class="fa-regular fa-trash-can"></i></button>
+                    </form>
+                </div>
             </td>
         </tr>
         @endforeach

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Article;
 use Illuminate\Http\Request;
 use App\Mail\CareerRequestMail;
@@ -57,7 +58,10 @@ class PublicController extends Controller
 
     return redirect(route('homepage'))->with('message', 'Grazie per averci contattato!');
 
-}
+    }
 
+    public function profile(User $user){
+        return view('user.profile', compact('user'));
+    }
 }
 
