@@ -8,7 +8,6 @@
             </div>
         </div>
 
-
         <div class="container container-fluid my-5">
         <div class="row justify-content-around">
             @foreach($articles as $article)
@@ -19,5 +18,4 @@
             </div>
         </div>
     </div>
-
 </x-layout>

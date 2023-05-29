@@ -24,6 +24,7 @@
                     Non categorizzato
                 </div> 
             @endif   
+            <span class="justify-content-center text-muted small text-center">Tempo di lettura {{$article->readDuration()}} min</span>
         </p>
     </div>
 </div>
