@@ -8,7 +8,6 @@
             </div>
         </div>
 
-
         <div class="container container-fluid my-5">
         <div class="row justify-content-around">
             @foreach($articles as $article)
@@ -20,4 +19,5 @@
         </div>
     </div>
 
+    <span class="text-muted small fst-italic">- tempo di lettura {{$article->readDuration()}} min</span>
 </x-layout>

@@ -57,5 +57,6 @@ Route::middleware('admin')->group(function(){
     Route::delete('/admin/delete/{category}/category', [AdminController::class, 'deleteCategory'])->name('admin.deleteCategory');
     Route::post('/admin/category/store', [AdminController::class, 'storeCategory'])->name('admin.storeCategory');
 });
+Route::get('/article/{article:slug}/show', [ArticleController::class, 'show'])->name('article.show');
 
 

@@ -15,4 +15,5 @@
             </div>
         </div>
     </div>
+    <span class="text-muted small fst-italic">- tempo di lettura {{$article->readDuration()}} min</span>
 </x-layout>
