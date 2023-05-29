@@ -16,6 +16,7 @@
                     <h2>{{$article->subtitle}}</h2>
                     <div class="my-3 text-muted fst-italic">
                         <p>Redatto da {{$article->user->name}} il {{$article->created_at->format('d/m/Y')}}</p>
+                        <p class="text-muted small text-center">Tempo di lettura {{$article->readDuration()}} min</p>
                     </div>
                 </div>
                 <hr>

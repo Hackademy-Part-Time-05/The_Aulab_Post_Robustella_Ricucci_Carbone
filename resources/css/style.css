@@ -49,7 +49,7 @@ font-family: 'Montserrat', sans-serif;
 }
 
 .card-footer {
-    height: 180px;
+    height: 230px;
 }
 
 .ellipsis {
@@ -75,4 +75,10 @@ img {
 .dropdown-custom-exit:hover {
     color: #ffffff;
     background-color: #dc3545;;
+}
+
+.custom {
+    border: 10px solid rgb(182, 23, 23);
+    background-color: red;
+    height: 100px;
 }
