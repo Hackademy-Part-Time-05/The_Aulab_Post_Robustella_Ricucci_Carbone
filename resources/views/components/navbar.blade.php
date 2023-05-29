@@ -18,7 +18,7 @@
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Benvenuto {{Auth::user()->name}}</a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
         <li>
-            <a class="dropdown-item dropdown-custom-profile" href="/user/profile">Profilo</a>
+            <a class="dropdown-item dropdown-custom-profile" href="">Profilo</a>
         </li>
         <li>
             <hr class="dropdown-divider">

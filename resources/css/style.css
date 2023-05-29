@@ -4,6 +4,7 @@ li {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 p, a, div, form {
@@ -39,14 +40,12 @@ font-family: 'Montserrat', sans-serif;
     color: white;
 }
 
-
-
 .card-img-top {
     height: 350px;
 }
 
 .card-body {
-    height: 120px;
+    height: 180px;
 }
 
 .card-footer {

@@ -18,6 +18,7 @@
         <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-muted">Home</a></li>
         <li class="nav-item mb-2"><a href="/article/create" class="nav-link p-0 text-muted">Scrivi un articolo</a></li>
         <li class="nav-item mb-2"><a href="/careers" class="nav-link p-0 text-muted">Lavora con noi</a></li>
+        <li class="nav-item mb-2"><a href="/article/index" class="nav-link p-0 text-muted">Tutti gli articoli</a></li>
       </ul>
     </div>
 
