@@ -1,6 +1,11 @@
-document.body.onfocus = addHoverOnCard();
+let cards = document.querySelectorAll(".card")
 
-function addHoverOnCard() {
-    var element = document.getElementsByClassName("card");
-    element.classList.add("custom");
-}
+
+cards.forEach((card) => {
+    card.addEventListener("mouseenter", () => {
+        card.classList.add("shadow")
+    })
+    card.addEventListener("mouseleave", () => {
+        card.classList.remove("shadow")
+    })
+})

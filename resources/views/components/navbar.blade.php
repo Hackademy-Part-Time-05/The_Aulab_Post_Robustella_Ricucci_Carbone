@@ -4,21 +4,14 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <!-- <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
-              </li>
-            </ul>
-          </div> -->
       </div>
       <div class="container-fluid d-flex p-2 justify-content-end">
       @auth
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Benvenuto {{Auth::user()->name}}</a>
+        <a class="nav-link dropdown-toggle me-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Benvenuto {{Auth::user()->name}}</a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
         <li>
-            <a class="dropdown-item dropdown-custom-profile" href="">Profilo</a>
+            <a class="dropdown-item dropdown-custom-profile" href="{{ route('user.profile', ['user' => Auth::user()->id]) }}">Profilo</a>
         </li>
         <li>
             <hr class="dropdown-divider">

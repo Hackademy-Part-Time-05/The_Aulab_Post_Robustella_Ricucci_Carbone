@@ -82,3 +82,15 @@ img {
     background-color: red;
     height: 100px;
 }
+
+.active-link{
+    color: #6c757d;
+}
+
+.active-link:hover{
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
