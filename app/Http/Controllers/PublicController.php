@@ -23,7 +23,7 @@ class PublicController extends Controller
     public function homepage() {
         $articles = Article::where('is_accepted', true)->orderBy('created_at', 'desc')->take(6)->get();
         
-        $articlescarousel = Article::whereIn('id', [7,8,9])->get();
+        $articlescarousel = Article::whereIn('id', [1,2,3])->get();
         return view('homepage', compact('articles', 'articlescarousel'));
     }
 
