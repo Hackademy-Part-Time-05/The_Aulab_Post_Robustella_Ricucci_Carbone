@@ -12,7 +12,21 @@
             </div>
             <div class="col-8">
                 <h3>Marco Robustella</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, nobis rerum fugit minima porro molestiae perferendis voluptatum facilis, tenetur maxime aliquid officia culpa voluptates labore quaerat commodi? Modi, explicabo tempore?</p>
+                <p>Laureato in Economia - Finanza e Mercati con Tesi in Matematica per l'Economia e la Finanza sui metodi quantitativi utilizzati dalle banche per combattere i rischi a cui sono esposte.<br>
+                Dopo il percorso universitario sono diventato Junior Full Stack Web Developer frequentando il corso coding di Aulab (HTML, CSS, JavaScript, PHP, GIT, Laravel, Bootstrap, MySQL).<br>
+                Ho sviluppato un'orientamento agli obiettivi, al problem solving e al lavoro di gruppo grazie alle mie esperienze lavorative.
+                <br>Appassionato di libri, fumetti e tecnologia.</p>
+            </div>
+        </div>
+        <div class="row m-5">
+            <div class="col-8">
+                <h3>Simone Ricucci</h3>
+                <p>Ho acquisito esperienza e conoscenze lavorando in diverse organizzazioni, contribuendo all'incremento della presenza online e alla Digital Transformation.<br>
+                Sono appassionato dell'applicazione delle nuove tecnologie per migliorare e automatizzare i processi aziendali.<br>
+                I miei punti di forza includono l’applicazione trasversale di competenze nel settore martech (Marketing, E-Commerce e Technology); ho completato il percorso come Junior Full Stack Developer presso Aulab, per ampliare le mie competenze proprio sull’area Technology. </p>
+            </div>
+            <div class="col-4">
+                <img src="/storage/images/Foto_Simone_Ricucci.jpg" class="img-fluid" alt="Marco Robustella">
             </div>
         </div>
     </div>

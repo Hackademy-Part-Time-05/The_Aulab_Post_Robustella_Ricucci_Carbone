@@ -11,6 +11,7 @@
             <li class="nav-item mb-2"><a href="/article/create" class="nav-link p-0 active-link">Scrivi un articolo</a></li>
             <li class="nav-item mb-2"><a href="/careers" class="nav-link p-0 active-link">Lavora con noi</a></li>
             <li class="nav-item mb-2"><a href="{{ route('article.index') }}" class="nav-link p-0 active-link">Tutti gli articoli</a></li>
+            <li class="nav-item mb-2"><a href="{{ route('about') }}" class="nav-link p-0 active-link">Chi siamo</a></li>
           </ul>
         </div>
         <div class="col mb-6">
