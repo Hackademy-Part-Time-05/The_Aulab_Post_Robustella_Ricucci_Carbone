@@ -4,7 +4,10 @@
             {{ session('message') }}
         </div>        
     @endif
+    
+    <x-carousel :$articlescarousel />
 
+    <!-- Cards -->
     <div class="container container-fluid my-5">
         <div class="row justify-content-around">
             @foreach($articles as $article)
