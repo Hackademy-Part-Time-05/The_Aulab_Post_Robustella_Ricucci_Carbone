@@ -1,8 +1,8 @@
 <div class="footer container-fluid">
     <footer class="row py-5 border-top px-5">
         <div class="col mb-3 d-flex flex-column align-items-start">
-            <h5>The Aulab Post</h5>
-            <p class="text-muted">© Copyrights 2023<br>Ideato e realizzato da:<br><a href="https://www.linkedin.com/in/marcorobustella/" target="_blank" class="active-link">· Marco Robustella<i class="ms-2 fa-brands fa-linkedin"></i></a><br><a href="https://www.linkedin.com/in/simonericucci/" target="_blank" class="active-link">· Simone Ricucci <i class="fa-brands fa-linkedin"></i></a></p>
+            <h5>ThePressRoom</h5>
+            <p class="text-muted">© Copyrights 2023<br><br>Ideato e realizzato da:<br><a href="https://www.linkedin.com/in/marcorobustella/" target="_blank" class="active-link">· Marco Robustella<i class="ms-2 fa-brands fa-linkedin"></i></a><br><a href="https://www.linkedin.com/in/simonericucci/" target="_blank" class="active-link">· Simone Ricucci <i class="fa-brands fa-linkedin"></i></a></p>
         </div>
         <div class="col mb-6">
           <h5>Collegamenti utili</h5>

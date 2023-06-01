@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-dark text-white px-4">
       <div class="container-fluid">
-          <a class="navbar-brand bg-dark text-white" href="/">The Aulab Post</a>
+          <a class="navbar-brand bg-dark text-white" href="/">ThePressRoom</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -52,11 +52,6 @@
         <a class="mx-2 btn btn-warning" href="{{ route('login') }}">Accedi</a>
       </li>
       @endguest
-      <!-- @guest
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Benvenuto!</a>
-        </li>
-      @endguest -->
     </div>
     <form class="d-flex w-75" method="GET" action="{{route('article.search')}}">
       <input class="form-control me-2" type="search" name="query" placeholder="Cosa stai cercando?" aria-label="Search">

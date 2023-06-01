@@ -22,7 +22,13 @@ class PublicController extends Controller
     
     public function homepage() {
         $articles = Article::where('is_accepted', true)->orderBy('created_at', 'desc')->take(6)->get();
-        return view('homepage', compact('articles'));
+        
+        $articlescarousel = Article::whereIn('id', [7,8,9])->get();
+        return view('homepage', compact('articles', 'articlescarousel'));
+    }
+
+    public function about() {        
+        return view('about');
     }
 
     public function careersSubmit(Request $request){
