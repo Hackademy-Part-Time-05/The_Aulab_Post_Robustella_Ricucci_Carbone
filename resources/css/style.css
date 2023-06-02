@@ -97,7 +97,6 @@ a {
 
 .carousel, .carousel-inner, .carousel-item {
     height: 500px;
-    position: position-absolute;
 }
 
 .carousel-item:after {
@@ -110,3 +109,11 @@ left:0;
 right:0;
 background:rgba(0,0,0,0.7);
 }
+
+
+.carousel-caption {
+z-index: 2;
+}
+  
+  
+  
