@@ -3,7 +3,7 @@
         <div class="row m-5 pt-3 pb-3">
             <h2>Un obiettivo</h2>
             <div class="col-12">
-            Il nostro obiettivo principale come team è stato quello di creare un sito di gestione degli articoli di blog che offra un'esperienza utente intuitiva e coinvolgente. Ci siamo impegnati a fornire una piattaforma robusta e facile da usare, che consenta agli utenti di pubblicare, gestire e condividere i loro articoli in modo efficiente. Siamo stati guidati dalla volontà di creare uno strumento che faciliti la creazione e la condivisione di contenuti di qualità, aiutando gli utenti a raggiungere il loro pubblico e a esprimere le proprie idee in modo efficace. Il nostro obiettivo è stato quello di soddisfare le esigenze dei nostri utenti, offrendo loro una soluzione affidabile e innovativa per la gestione dei loro blog.            </div>
+            Il nostro obiettivo principale come team è stato quello di creare un sito di gestione degli articoli di blog che offra un'esperienza utente intuitiva e coinvolgente. Ci siamo impegnati a fornire una piattaforma robusta e facile da usare, che consenta agli utenti di pubblicare, gestire e condividere i loro articoli in modo efficiente. Siamo stati guidati dalla volontà di creare uno strumento che faciliti la creazione e la condivisione di contenuti di qualità, aiutando gli utenti a raggiungere il loro pubblico e a esprimere le proprie idee in modo efficace. Abbiamo lavoro con passione e dediziano per soddisfare le esigenze dei nostri utenti, offrendo loro una soluzione affidabile e innovativa per la gestione dei loro blog. </div>
         </div>
         <div class="row m-5">
             <div class="col-4">
