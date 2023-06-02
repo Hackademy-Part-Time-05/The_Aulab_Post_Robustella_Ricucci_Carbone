@@ -125,6 +125,21 @@ background:rgba(0,0,0,0.7);
 .carousel-caption {
 z-index: 2;
 }
+
+.carousel-1-image-custom {
+    position: absolute;
+    bottom: -50%;
+}
+
+.carousel-2-image-custom {
+    position: absolute;
+    bottom: -30%;
+}
+
+.carousel-3-image-custom {
+    position: absolute;
+    bottom: -30%;
+}
   
   
   

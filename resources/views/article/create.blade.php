@@ -37,15 +37,15 @@
                     </div>
                     <div class="mb-3">
                         <label for="category" class="form-label">Categoria:</label>
-                        <select name="category" id="category">
+                        <select class="form-select" name="category" id="category">
                             @foreach ($categories as $category)
-                                <option value="{{ $category->id }}">{{ $category->name }}</option>    
+                            <option value="{{ $category->id }}">{{ ucfirst($category->name) }}</option>   
                             @endforeach
                         </select>
                     </div>
                     <div class="mb-3">
                         <label for="tags" class="form-label">Tags:</label>
-                        <input name="tags" id="tags" class="form-control" value="{{ old('tags') }}">
+                        <input name="tags" placeholder="Tag 1, tag 2, tag 3, ecc..." id="tags" class="form-control" value="{{ old('tags') }}">
                         <span class="small fst-italic">Dividi ogni tag con una virgola</span>
                     </div>
                     <div class="mb-3">

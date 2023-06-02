@@ -7,7 +7,7 @@
     <div class="carousel-inner">
         <a href="article/{{ $articlescarousel[0]->slug }}/show">
             <div class="carousel-item active">
-            <img src="{{ Storage::url($articlescarousel[0]->image) }}" class="d-block w-100 mx-auto" alt="...">
+            <img src="{{ Storage::url($articlescarousel[0]->image) }}" class="d-block w-100 mx-auto carousel-1-image-custom" alt="...">
                 <div class="carousel-caption d-none d-md-block z-3">
                     <h5>{{ $articlescarousel[0]->title }}</h5>
                     <p>{{ $articlescarousel[0]->subtitle }}</p>
@@ -16,7 +16,7 @@
         </a>
         <a href="article/{{ $articlescarousel[1]->slug }}/show">
             <div class="carousel-item">
-            <img src="{{ Storage::url($articlescarousel[1]->image) }}" class="d-block w-100 mx-auto" alt="...">
+            <img src="{{ Storage::url($articlescarousel[1]->image) }}" class="d-block w-100 mx-auto carousel-2-image-custom" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>{{ $articlescarousel[1]->title }}</h5>
                     <p>{{ $articlescarousel[1]->subtitle }}</p>
@@ -25,7 +25,7 @@
         </a>
         <a href="article/{{ $articlescarousel[2]->slug }}/show">
             <div class="carousel-item">
-            <img src="{{ Storage::url($articlescarousel[2]->image) }}" class="d-block w-100 mx-auto" alt="...">
+            <img src="{{ Storage::url($articlescarousel[2]->image) }}" class="d-block w-100 mx-auto carousel-3-image-custom" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>{{ $articlescarousel[2]->title }}</h5>
                     <p>{{ $articlescarousel[2]->subtitle }}</p>
