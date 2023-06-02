@@ -11,6 +11,18 @@ p, a, div, form {
 font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    background-color: #FFFAEC;
+}
+
+.logotype {
+    height: 50px;
+}
+
+.subtitle-brand {
+    font-size: 12px;
+}
+
 .navbar-brand {
     font-weight: 700;
 }

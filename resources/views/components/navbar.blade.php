@@ -1,6 +1,12 @@
 <nav class="navbar navbar-expand-lg bg-dark text-white px-4">
-      <div class="container-fluid">
-          <a class="navbar-brand bg-dark text-white" href="/">ThePressRoom</a>
+      <div class="container-fluid justify-content-start d-flex align-items-center">
+        <div class="container-fluid justify-content-start d-flex align-items-center">
+          <img class="logotype me-4" src="/storage/images/Logo-ThePressRoom.png" alt="Logo ThePressRoom">
+          <div class="d-flex flex-column">
+            <a href=""><p class="navbar-brand bg-dark text-white pb-0 mb-0" href="/">ThePressRoom</p>
+            <p class="bg-dark text-white py-0 my-0 subtitle-brand" href="/">The truth has a name</p></a>
+          </div>
+        </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
