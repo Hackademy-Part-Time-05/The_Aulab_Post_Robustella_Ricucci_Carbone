@@ -20,17 +20,19 @@
                     </div>
                 </div>
                 <hr>
-                <p>{{$article->body}}</p>
+                <p>{!! nl2br($article->body) !!}</p>
                 <div class="text-center mt-3">
                     <a href="{{route('article.index')}}" class="btn btn-outline-secondary"><i class="fa-solid fa-arrow-left me-2"></i>Torna indietro</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid d-flex justify-content-center ">
+    <div class="container-fluid d-flex justify-content-center">
         @if(Auth::user() && Auth::user()->is_revisor)
-        <a href="{{route('revisor.acceptArticle', compact('article'))}}" class="btn btn-success text-white mx-3 mb-5"><i class="fa-solid fa-check me-2"></i>Accetta articolo</a>
-        <a href="{{route('revisor.rejectArticle', compact('article'))}}" class="btn btn-danger text-white mx-3 mb-5"><i class="fa-solid fa-xmark me-2"></i>Rifiuta articolo</a>
+            @if(!$article->is_accepted)
+                <a href="{{route('revisor.acceptArticle', compact('article'))}}" class="btn btn-success text-white mx-3 mb-5"><i class="fa-solid fa-check me-2"></i>Accetta articolo</a>
+            @endif
+            <a href="{{route('revisor.rejectArticle', compact('article'))}}" class="btn btn-danger text-white mx-3 mb-5"><i class="fa-solid fa-xmark me-2"></i>Rifiuta articolo</a>
         @endif
     </div>
 </x-layout>

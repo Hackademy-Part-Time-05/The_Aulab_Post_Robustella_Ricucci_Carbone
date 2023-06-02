@@ -10,12 +10,6 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle me-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Benvenuto {{Auth::user()->name}}</a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <!-- <li>
-            <a class="dropdown-item dropdown-custom-profile" href="{{ route('user.profile', ['user' => Auth::user()->id]) }}">Profilo</a>
-        </li>
-        <li>
-            <hr class="dropdown-divider">
-        </li> -->
         @if(Auth::user()->is_admin)
           <li>
             <a class="dropdown-item dropdown-custom-standard-labels" href="{{ route('admin.dashboard') }}">Dashboard Admin</a>
