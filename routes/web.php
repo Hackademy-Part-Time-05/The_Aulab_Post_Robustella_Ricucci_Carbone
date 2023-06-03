@@ -6,6 +6,7 @@ use App\Http\Controllers\PublicController;
 use App\Http\Controllers\WriterController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\RevisorController;
+use App\Http\Controllers\CommentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -59,5 +60,5 @@ Route::middleware('admin')->group(function(){
     Route::post('/admin/category/store', [AdminController::class, 'storeCategory'])->name('admin.storeCategory');
 });
 Route::get('/article/{article:slug}/show', [ArticleController::class, 'show'])->name('article.show');
-
+Route::get('/articles/{article}', [ArticleController::class, 'show'])->name('article.show');
 
